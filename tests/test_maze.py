@@ -44,9 +44,9 @@ def test_out_of_bounds():
 def test_no_path_maze():
     g = [
         [0,1,0,0],
+        [1,1,0,1],
         [0,1,0,1],
         [0,1,0,1],
-        [0,0,0,1],
     ]
     assert find_path(g, (0,0), (3,2)) is None
 
